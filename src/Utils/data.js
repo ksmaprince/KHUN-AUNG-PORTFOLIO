@@ -75,7 +75,7 @@ export const skills = [
     },
     {
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-        title: "PostgresSQL",
+        title: "Postgres",
         tag: "backend"
     },
     {
@@ -152,7 +152,7 @@ export const skills = [
 
     {
         icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-studio-icon.png",
-        title: "Android Studio",
+        title: "A.Studio",
         tag: "platform"
     },
 
@@ -197,14 +197,14 @@ export const projects = [
         title: 'MM-Calendar',
         type: 'Book & Reference',
         image: 'https://ksmaprince.github.io/K.AUNG/Project/MMCalendarApp.png',
-        description: 'A Calendar with Myanmar versus English date. It can be calculated and converted to the date between Myanmar and English. Users can add notes, events, and memories to the note features.',
-        techStack: ['Kotlin', 'MVVM', 'LiveData', 'Room', 'Coroutine', 'Dagger-Hilt', 'Navigation Graph', 'Firebase', 'ironSource Monetization'],
+        description: 'A calendar app that can calculate and convert to the date between Myanmar and English. Users can add notes, events, and memories to the note features.',
+        techStack: ['Kotlin', 'MVVM', 'LiveData', 'Room', 'Coroutine', 'Hilt', 'Nav Graph', 'Firebase', 'ironSource'],
         github: '',
         liveDemo: 'https://play.google.com/store/apps/details?id=com.nanhm.mmcalendar'
     },
     {
         id: 1,
-        title: 'MM-ENG Dictionary',
+        title: 'MMENG Dictionary',
         type: 'Book & Reference',
         image: 'https://ksmaprince.github.io/K.AUNG/Project/MMENGDictionaryApp.png',
         description: "A dictionary app that allow user to search the translation of each Burmese word into English. It's useful for those who learn English vs Burmese Language.",
@@ -227,8 +227,8 @@ export const projects = [
         title: 'Dhamma',
         type: 'Tool',
         image: 'https://ksmaprince.github.io/K.AUNG/Project/DhammaApp.png',
-        description: 'An app helps those who are interested in reading the Buddha Dhamma Script and listening to audio from Buddhist Monks, Abidhama Teachers, Meditation Trainers, etc. Users can also read and listen to them offline by downloading PDF Docs, and MP3 Audios Files.',
-        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Hilt', 'Navigation', 'ExoPlayer', 'Firebase','ironSource Monetization'],
+        description: 'An app serves the user to study Buddha Dhamma Script and listen to audio from Buddhist Monks, ABIDHAMA Teachers, Meditation Trainers with over 10,000 resources.',
+        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Hilt', 'Nav Graph', 'ExoPlayer', 'Firebase','ironSource'],
         github: '',
         liveDemo: 'https://play.google.com/store/apps/details?id=com.haymarsan.dhammapiya'
     },
@@ -237,8 +237,8 @@ export const projects = [
         title: "ENGMMDictionary",
         type: "Book & Reference",
         image: "https://ksmaprince.github.io/K.AUNG/Project/ENGMMDictionaryApp.png",
-        description: "An offline dictionary allows users to search for the explanation of each English word in the Myanmar language. It also provides word of the day; the user can memorize at least one English word randomly every day.",
-        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Dagger/Hilt', 'Google Speech Recognition', 'Firebase', 'ironSource Monetization'],
+        description: "An offline dictionary allows users to search for the explanation of each English word in the Myanmar language with over 30,000 words.",
+        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Hilt', 'Speech Recognition', 'Firebase', 'ironSource'],
         github: "",
         liveDemo: "https://play.google.com/store/apps/details?id=com.peteaung.engmmdictionary"
     },
@@ -248,17 +248,17 @@ export const projects = [
         type: "Book & Referene",
         image: "https://ksmaprince.github.io/K.AUNG/Project/MyHealthApp.png",
         description: "The app provides the following features: health information and knowledge, BMI Calculator, Due Date Calculator, and full descriptions of each result.",
-        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Hilt', 'Navigation', 'Retrofit', 'Firebase', 'ironSource Monetization'],
+        techStack: ['Kotlin', 'MVVM', 'Room', 'Coroutine', 'Hilt', 'Navigation', 'Retrofit', 'Firebase', 'ironSource'],
         github: "",
         liveDemo: "https://play.google.com/store/apps/details?id=com.peteaung.myhealth"
     },
     {
         id: 6,
-        title: "Neifty PM",
+        title: "Portfolio",
         type: "PROJECT MANAGER",
-        image: "https://user-images.githubusercontent.com/94675329/212766385-81cad39c-a83e-4a08-87de-5a539e12ef8d.png",
+        image: "https://ksmaprince.github.io/K.AUNG/Project/Portfolio.png",
         description: "Nifty, it's a remote collaboration hub to manage Projects, tasks, communication all in one place. Here you can collaborate with your team within an easy way.",
-        techStack: ["HTML", "CSS", "JavaScript"],
+        techStack: ["HTML", "CSS", "JavaScript, React"],
         github: "https://github.com/Atanu8250/cared-eggs-1276",
         liveDemo: "https://nifty-cloned-by-atanu.netlify.app/"
     },

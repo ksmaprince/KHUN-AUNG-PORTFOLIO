@@ -19,6 +19,9 @@ import ProjectCard from '../Components/Card';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
+import coder1 from '../Images/coder1.webp';
+import coder2 from '../Images/coder2.webp';
+import coder3 from '../Images/coder3.webp';
 import Slider from 'react-slick';
 import axios from 'axios';
 
@@ -40,75 +43,77 @@ const Home = () => {
         Aos.init()
     }, [])
 
-    const sendEmail = async (e) => {
-        console.log("Send Email Click")
-        e.preventDefault();
-        
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_SERVICE_TEMPLATE, form.current, process.env.REACT_APP_SERVICE_SECRET).then((result) => {
-            toast({
-                position: 'top-center',
-                title: 'Email Sent ✔',
-                description: `Thank You ${form.current.from_name.value.split(" ")[0]} for the message!`,
-                status: 'success',
-                duration: 5000,
-                isClosable: true,
-            })
-
-            form.current.reset();
-        }, (error) => {
-            console.log(error.text);
-            toast({
-                position: 'top-right',
-                title: 'Email Not sent.',
-                description: "There is some error",
-                status: 'warning',
-                duration: 5000,
-                isClosable: true,
-            })
-        });
-
-    };
-
     // const sendEmail = async (e) => {
+    //     console.log("Send Email Click")
     //     e.preventDefault();
-      
-    //     const formData = {
-    //       name: form.current.name,
-    //       email: form.current.email,
-    //       phone: '1112223333', // Hardcoded for now
-    //       content: form.current.content
-    //     };
-      
-    //     try {
-    //       const response = await axios.post('https://afej3vxkw2.execute-api.us-east-1.amazonaws.com/v1/contact', formData, {
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //       });
-      
-    //       if (response.status === 200) {
+        
+    //     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_SERVICE_TEMPLATE, form.current, process.env.REACT_APP_SERVICE_SECRET).then((result) => {
     //         toast({
-    //           position: 'top-center',
-    //           title: 'Email Sent ✔',
-    //           description: 'Your message has been sent successfully!',
-    //           status: 'success',
-    //           duration: 5000,
-    //           isClosable: true,
-    //         });
+    //             position: 'top-center',
+    //             title: 'Email Sent ✔',
+    //             description: `Thank You ${form.current.from_name.value.split(" ")[0]} for the message!`,
+    //             status: 'success',
+    //             duration: 5000,
+    //             isClosable: true,
+    //         })
+
     //         form.current.reset();
-    //       }
-    //     } catch (error) {
-    //       toast({
-    //         position: 'top-center',
-    //         title: 'Email Not Sent',
-    //         description: `There was an error sending the message: ${error.message}`,
-    //         status: 'error',
-    //         duration: 5000,
-    //         isClosable: true,
-    //       });
-    //       console.error('Error sending email:', error);
-    //     }
-    //   };
+    //     }, (error) => {
+    //         console.log(error.text);
+    //         toast({
+    //             position: 'top-right',
+    //             title: 'Email Not sent.',
+    //             description: "There is some error",
+    //             status: 'warning',
+    //             duration: 5000,
+    //             isClosable: true,
+    //         })
+    //     });
+
+    // };
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+
+        console.log(form.current.from_name.value)
+      
+        const formData = {
+          name: form.current.from_name.value,
+          email: form.current.from_mail.value,
+          phone: form.current.from_phone.value, 
+          content: form.current.message.value
+        };
+      
+        try {
+          const response = await axios.post('https://afej3vxkw2.execute-api.us-east-1.amazonaws.com/v1/contact', formData, {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          });
+      
+          if (response.status === 200) {
+            toast({
+              position: 'top-center',
+              title: 'Email Sent ✔',
+              description: 'Your message has been sent successfully!',
+              status: 'success',
+              duration: 5000,
+              isClosable: true,
+            });
+            form.current.reset();
+          }
+        } catch (error) {
+          toast({
+            position: 'top-center',
+            title: 'Email Not Sent',
+            description: `There was an error sending the message: ${error.message}`,
+            status: 'error',
+            duration: 5000,
+            isClosable: true,
+          });
+          console.error('Error sending email:', error);
+        }
+      };
 
     return (
         <Box>
@@ -119,10 +124,7 @@ const Home = () => {
                         <Box className='content'>
                             <Heading fontSize="3.3em" className='text' data-text="Khun Aung"><span className='themeText'>Khun Aung</span></Heading>
                         </Box>
-                        {/* <Box className='name'>
-                            <Heading>K. Aung</Heading>
-                            <Heading>K. Aung</Heading>
-                        </Box> */}
+                    
                         <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank') }}>
                             {/* <a href={Resume} download="KHUN_AUNG_RESUME"> */}
@@ -221,10 +223,46 @@ const Home = () => {
                 </Flex>
             </Box>
 
+            {/* https://ksmaprince.github.io/K.AUNG/Project/coder_guy.avif */}
+
+            <Box id="aboutMe">
+                <Heading>My <span className='themeText'>Experiences</span></Heading>
+                <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
+                    <Flex w="80%" gap="10%" justifyContent="center">
+                    <div data-aos="fade-right">
+                        <Image
+                                src={coder3}
+                                boxSize='400px'
+                                borderRadius='20px'
+                                alt='Khun Aung Avatar' />
+                    </div>
+                    </Flex>
+                    
+                    <Flex data-aos="fade-left">
+                        
+                        <Box>
+                        <Heading size='md'>Mobile Android Software Engineer</Heading>
+                        <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading>
+                        <br/>
+                            <Text>
+                            <ul>
+                                <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
+                                <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
+                                <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
+                                <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
+                                <li>Provided mentorship to junior developers and internships providing them knowledge-sharing environments and participating in the code reviews sections.</li>
+                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices, by following the Google developers’ documents.</li>
+                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
+                            </ul>
+                            </Text>
+                        </Box>
+                    </Flex>
+                </Flex>
+            </Box>
 
             {/* show projects */}
             <Box id="projects">
-                <Heading textAlign="center">Featured <span className='themeText'>Projects</span></Heading>
+                <Heading textAlign="center">Recent <span className='themeText'>Projects</span></Heading>
                 <Slider {...settings}>
                     {
                         projects.map((project, i) => <ProjectCard key={i} {...project} />)
@@ -232,6 +270,56 @@ const Home = () => {
                 </Slider>
             </Box>
 
+            <Box id="aboutMe">
+                <Heading>My <span className='themeText'>Education</span></Heading>
+                <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
+                    <Flex w="80%" gap="10%" justifyContent="center">
+                    <div data-aos="fade-right">
+                        <Image
+                                src={coder3}
+                                boxSize='400px'
+                                borderRadius='20px'
+                                alt='Khun Aung Avatar' />
+                    </div>
+                    </Flex>
+                    
+                    <Flex data-aos="fade-left">
+                        
+                        <Box>
+                        <Heading size='md'>Master of Science (Computer Science)</Heading>
+                        <Heading size='sm'>Maharishi International University, USA</Heading>
+                        <Heading size='sm'>2023 - 2025</Heading>
+
+                        <br/>
+                        <br/>
+
+                        <Heading size='md'>Bachelor of Science in Computer Science</Heading>
+                        <Heading size='sm'>University of Computer Studies</Heading>
+                        <Heading size='sm'>2006 - 2010</Heading>
+                            <Text>
+                            {/* <ul>
+                                <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
+                                <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
+                                <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
+                                <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
+                                <li>Provided mentorship to junior developers and internships providing them knowledge-sharing environments and participating in the code reviews sections.</li>
+                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices, by following the Google developers’ documents.</li>
+                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
+                            </ul> */}
+                            </Text>
+                        </Box>
+                    </Flex>
+                </Flex>
+            </Box>
+
+            <Box id="projects">
+                <Heading textAlign="center"><span className='themeText'>Personal </span>Projects & Publications</Heading>
+                <Slider {...settings}>
+                    {
+                        projects.map((project, i) => <ProjectCard key={i} {...project} />)
+                    }
+                </Slider>
+            </Box>
 
             {/* Github Statistics */}
             <Box id="githubStats">
@@ -268,10 +356,10 @@ const Home = () => {
                                 <input type="text" name="from_name" required />
                                 <span>Full Name</span>
                             </div>
-                            {/* <div className='inputBox'>
+                            <div className='inputBox'>
                                 <input type="phone" name="from_phone" required />
                                 <span>Phone</span>
-                            </div> */}
+                            </div>
                             <div className='inputBox'>
                                 <input type="email" name="from_mail" required />
                                 <span>Email</span>

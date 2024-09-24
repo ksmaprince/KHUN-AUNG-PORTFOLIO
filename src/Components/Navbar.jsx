@@ -15,8 +15,8 @@ const Navbar = () => {
                     <Image src={logo} alt='Portfolio logo' />
                 </Box>
                 <Box className='name'>
-                    {/* <Heading>K. Aung</Heading>
-                    <Heading>K. Aung</Heading> */}
+                    <Heading>K.Aung</Heading>
+                    <Heading>K.Aung</Heading>
                 </Box>
             </Box>
             <Box display={["none", 'none', 'none', 'flex']} className="nav-options">
@@ -63,8 +63,8 @@ const Navbar = () => {
                                 <Image src={logo} alt='Portfolio logo' />
                             </Box>
                             <Box className='name'>
-                                {/* <Heading>Atanu K.</Heading>
-                                <Heading>Atanu K.</Heading> */}
+                                <Heading>K.Aung</Heading>
+                                <Heading>K.Aung</Heading>
                             </Box>
                         </Box>
                     </DrawerHeader>

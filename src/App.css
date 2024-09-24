@@ -112,7 +112,7 @@ p::selection {
 }
 
 .name h2:nth-child(1) {
-    background: linear-gradient(to left, #480da1, #ec633d);
+    background: linear-gradient(to left, #129b7f, #ece33d);
     -webkit-text-stroke: 2px transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -302,13 +302,13 @@ p::selection {
 .content .text::before {
     left: -3px;
     text-shadow: -2px 0 red;
-    animation: glitch-1 2s 0s linear reverse infinite;
+    animation: glitch-1 15s 5s linear reverse infinite;
 }
 
 .content .text::after {
     left: 3px;
     text-shadow: -2px 0 blue;
-    animation: glitch-2 2s 0s linear reverse infinite;
+    animation: glitch-2 15s 5s linear reverse infinite;
 }
 
 /* Description text */
@@ -495,16 +495,6 @@ p::selection {
     white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Projects section */
 #projects {
     margin-top: 50px;
@@ -516,6 +506,20 @@ p::selection {
 }
 
 #projects>div:nth-child(2) {
+    width: 80vw;
+    margin: 50px auto;
+}
+
+#publications {
+    margin-top: 50px;
+    background-color: #1a202c;
+}
+
+#publications>h2:nth-child(1) {
+    letter-spacing: 1px;
+}
+
+#publications>div:nth-child(2) {
     width: 80vw;
     margin: 50px auto;
 }
@@ -565,14 +569,14 @@ p::selection {
 
 /* title of the project */
 .ProjectCard>div:nth-child(2)>div:nth-child(1)>h2 {
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 1.5px;
 }
 
 /* tech stack of the project */
 .ProjectCard>div:nth-child(2)>p:nth-child(2) {
     margin: 4px 0px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     background: linear-gradient(to left, #7112ff, #ec633d);
     -webkit-background-clip: text;
@@ -581,7 +585,7 @@ p::selection {
 
 /* description part */
 .ProjectCard>div:nth-child(2)>p:nth-child(3) {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: lighter;
     line-height: 20px;
     color: #eee;
@@ -744,11 +748,11 @@ p::selection {
     border: 1px solid #49a09d;
 }
 
-.form-section>form>div:nth-child(3) {
+.form-section>form>div:nth-child(4) {
     width: 100%;
 }
 
-.form-section>form>div:nth-child(3)>textarea {
+.form-section>form>div:nth-child(4)>textarea {
     width: 100%;
     min-height: 100px;
     background-color: #141431;
@@ -760,7 +764,7 @@ p::selection {
     scrollbar-width: none;
 }
 
-.form-section>form>input:nth-child(4) {
+.form-section>form>input:nth-child(5) {
     width: 100%;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -772,11 +776,11 @@ p::selection {
     transition: none !important;
 }
 
-.form-section>form>input:nth-child(4):active {
+.form-section>form>input:nth-child(5):active {
     transform: scale(0.95)
 }
 
-.form-section>form>input:nth-child(4):hover {
+.form-section>form>input:nth-child(5):hover {
     background-color: #212151;
     color: #e0eff2;
     text-shadow: -2px 1px 0 #3a50d9, -4px 3px 0 #0a0e27;
