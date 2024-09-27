@@ -225,13 +225,13 @@ const Home = () => {
 
             {/* https://ksmaprince.github.io/K.AUNG/Project/coder_guy.avif */}
 
-            <Box id="aboutMe">
+            <Box id="experience">
                 <Heading>My <span className='themeText'>Experiences</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
                     <Flex w="80%" gap="10%" justifyContent="center">
                     <div data-aos="fade-right">
                         <Image
-                                src={coder3}
+                                src="https://ksmaprince.github.io/K.AUNG/Project/CoderBoy1.webp"
                                 boxSize='400px'
                                 borderRadius='20px'
                                 alt='Khun Aung Avatar' />
@@ -262,15 +262,15 @@ const Home = () => {
 
             {/* show projects */}
             <Box id="projects">
-                <Heading textAlign="center">Recent <span className='themeText'>Projects</span></Heading>
+                <Heading textAlign="center">Recent Work <span className='themeText'>Projects</span></Heading>
                 <Slider {...settings}>
                     {
-                        projects.map((project, i) => <ProjectCard key={i} {...project} />)
+                        projects.filter((el) => el.category === "work").map((project, i) => <ProjectCard key={i} {...project} />)
                     }
                 </Slider>
             </Box>
 
-            <Box id="aboutMe">
+            <Box id="education">
                 <Heading>My <span className='themeText'>Education</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
                     <Flex w="80%" gap="10%" justifyContent="center">
@@ -286,16 +286,19 @@ const Home = () => {
                     <Flex data-aos="fade-left">
                         
                         <Box>
-                        <Heading size='md'>Master of Science (Computer Science)</Heading>
+                        <Heading size='md'>Master of Science in Computer Science</Heading>
                         <Heading size='sm'>Maharishi International University, USA</Heading>
                         <Heading size='sm'>2023 - 2025</Heading>
+                        <Text>NOTE: Completed on-campus studies and currently taking distance education courses to complete a master’s degree in computer science. Expected graduation is 12/2025.</Text>
 
                         <br/>
                         <br/>
 
                         <Heading size='md'>Bachelor of Science in Computer Science</Heading>
-                        <Heading size='sm'>University of Computer Studies</Heading>
+                        <Heading size='sm'>University of Computer Studies, Yangon</Heading>
                         <Heading size='sm'>2006 - 2010</Heading>
+
+
                             <Text>
                             {/* <ul>
                                 <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
@@ -313,10 +316,10 @@ const Home = () => {
             </Box>
 
             <Box id="projects">
-                <Heading textAlign="center"><span className='themeText'>Personal </span>Projects & Publications</Heading>
+                <Heading textAlign="center"><span className='themeText'>Academic </span>Projects</Heading>
                 <Slider {...settings}>
                     {
-                        projects.map((project, i) => <ProjectCard key={i} {...project} />)
+                        projects.filter((el) => el.category === "academic").map((project, i) => <ProjectCard key={i} {...project} />)
                     }
                 </Slider>
             </Box>
@@ -339,6 +342,14 @@ const Home = () => {
                 </Center>
             </Box>
 
+            <Box id="projects">
+                <Heading textAlign="center"><span className='themeText'>Personal </span>Projects & Publications</Heading>
+                <Slider {...settings}>
+                    {
+                        projects.filter((el) => el.category === "personal").map((project, i) => <ProjectCard key={i} {...project} />)
+                    }
+                </Slider>
+            </Box>
 
             {/* Contact me */}
             <Box id='contactMe'>
