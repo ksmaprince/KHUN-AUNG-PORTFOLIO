@@ -155,7 +155,7 @@ const Home = () => {
                                 borderRadius='full'
                                 boxSize='250px'
                                 src='https://ksmaprince.github.io/K.AUNG/khun.png'
-                                alt='Khun Aung Avatar' />
+                                alt='Khun Aung Avatar Image' />
                             <Svg3 />
                         </Flex>
 
