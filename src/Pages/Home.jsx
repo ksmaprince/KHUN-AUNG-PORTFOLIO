@@ -19,9 +19,6 @@ import ProjectCard from '../Components/Card';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
-import coder1 from '../Images/coder1.webp';
-import coder2 from '../Images/coder2.webp';
-import coder3 from '../Images/coder3.webp';
 import Slider from 'react-slick';
 import axios from 'axios';
 
@@ -276,7 +273,7 @@ const Home = () => {
                     <Flex w="80%" gap="10%" justifyContent="center">
                     <div data-aos="fade-right">
                         <Image
-                                src={coder3}
+                                src="https://ksmaprince.github.io/K.AUNG/Project/CoderBoy2.webp"
                                 boxSize='400px'
                                 borderRadius='20px'
                                 alt='Khun Aung Avatar' />

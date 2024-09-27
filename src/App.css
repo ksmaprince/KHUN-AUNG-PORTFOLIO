@@ -302,13 +302,13 @@ p::selection {
 .content .text::before {
     left: -3px;
     text-shadow: -2px 0 red;
-    animation: glitch-1 15s 5s linear reverse infinite;
+    animation: glitch-1 10s 0s ease-in-out alternate infinite;
 }
 
 .content .text::after {
     left: 3px;
     text-shadow: -2px 0 blue;
-    animation: glitch-2 15s 5s linear reverse infinite;
+    animation: glitch-1 10s 0s ease-in-out alternate infinite;
 }
 
 /* Description text */
