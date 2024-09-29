@@ -1,7 +1,7 @@
 import { Box, Button, Center, Flex, Heading, HStack, Link, Tooltip, Image, Text } from '@chakra-ui/react'
 import { useToast } from '@chakra-ui/react'
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import GitHubCalendar from 'react-github-calendar';
