@@ -240,6 +240,9 @@ const Home = () => {
                                 <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
                                 <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
                                 <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
+                                <li>Provided mentorship to junior developers and internships.</li>
+                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices.</li>
+                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
                             </ul>
                             </Text>
                         </Box>
@@ -293,7 +296,7 @@ const Home = () => {
 
             {/* Github Statistics */}
             <Box id="githubStats">
-                <Heading textAlign="center">Github <span className='themeText'>stats</span></Heading>
+                <Heading textAlign="center">Github <span className='themeText'>Stats</span></Heading>
                 <Center className='github-stats'>
                     <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksmaprince&layout=compact&hide_border=true&theme=radical" alt="Atanu's most used languages" />
                     <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ksmaprince&theme=radical" alt="Atanu's github Stats" />

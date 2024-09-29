@@ -965,6 +965,21 @@ p::selection {
         display: block;
     }
 
+    /* experience >
+     svg */
+
+     #education>div:nth-child(2)>div:nth-child(1) {
+        display: none;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(2) {
+        width: 90%;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+        display: block;
+    }
+
 
     /* contect me */
     #contactMe>div:nth-child(2)>div:nth-child(1) {
@@ -1039,6 +1054,20 @@ p::selection {
     /* projects */
     #projects>div:nth-child(2) {
         gap: 15px;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(1) {
+        display: none;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(2) {
+        width: 90%;
+    }
+
+    /* Profile pic */
+    #education>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img {
+        height: 200px;
+        width: 200px;
     }
 
 
@@ -1161,6 +1190,21 @@ p::selection {
     .ProjectCard>div:last-child>div>a>button {
         font-size: 12px;
     }
+
+    /* education */
+    #education>h2:nth-child(1) {
+        margin: 50px 0px -50px;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+        display: none;
+    }
+
+    #education>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+
 
     /* github-stats */
     #githubStats>div:nth-child(2)>img {
