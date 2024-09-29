@@ -222,26 +222,17 @@ const Home = () => {
                 </Flex>
             </Box>
 
-            {/* https://ksmaprince.github.io/K.AUNG/Project/coder_guy.avif */}
-
             <Box id="experience">
                 <Heading>My <span className='themeText'>Experiences</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
-                    <Flex w="80%" gap="10%" justifyContent="center">
                     <div data-aos="fade-right">
-                        <Image
-                                src="https://ksmaprince.github.io/K.AUNG/Project/CoderBoy1.webp"
-                                boxSize='400px'
-                                borderRadius='20px'
-                                alt='Khun Aung Avatar' />
+                            <Svg3/>
                     </div>
-                    </Flex>
                     
                     <Flex data-aos="fade-left">
-                        
                         <Box>
                         <Heading size='md'>Mobile Android Software Engineer</Heading>
-                        <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading>
+                        <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading> 
                         <br/>
                             <Text>
                             <ul>
@@ -249,9 +240,6 @@ const Home = () => {
                                 <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
                                 <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
                                 <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
-                                <li>Provided mentorship to junior developers and internships providing them knowledge-sharing environments and participating in the code reviews sections.</li>
-                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices, by following the Google developers’ documents.</li>
-                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
                             </ul>
                             </Text>
                         </Box>
@@ -272,43 +260,23 @@ const Home = () => {
             <Box id="education">
                 <Heading>My <span className='themeText'>Education</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
-                    <Flex w="80%" gap="10%" justifyContent="center">
                     <div data-aos="fade-right">
-                        <Image
-                                src="https://ksmaprince.github.io/K.AUNG/Project/CoderBoy2.webp"
-                                boxSize='400px'
-                                borderRadius='20px'
-                                alt='Khun Aung Avatar' />
+                            <Svg3/>
                     </div>
-                    </Flex>
                     
                     <Flex data-aos="fade-left">
-                        
                         <Box>
-                        <Heading size='md'>Master of Science in Computer Science</Heading>
-                        <Heading size='sm'>Maharishi International University, USA</Heading>
-                        <Heading size='sm'>2023 - 2025</Heading>
-                        <Text>NOTE: Completed on-campus studies and currently taking distance education courses to complete a master’s degree in computer science. Expected graduation is 12/2025.</Text>
+                            <Heading size='md'>Master of Science in Computer Science</Heading>
+                            <Heading size='sm'>Maharishi International University, USA</Heading>
+                            <Heading size='sm'>2023 - 2025</Heading>
+                            <Text>NOTE: Completed on-campus studies and currently taking distance education courses to complete a master’s degree in computer science. Expected graduation is 12/2025.</Text>
 
-                        <br/>
-                        <br/>
+                            <br/>
+                            <br/>
 
-                        <Heading size='md'>Bachelor of Science in Computer Science</Heading>
-                        <Heading size='sm'>University of Computer Studies, Yangon</Heading>
-                        <Heading size='sm'>2006 - 2010</Heading>
-
-
-                            <Text>
-                            {/* <ul>
-                                <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
-                                <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
-                                <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
-                                <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
-                                <li>Provided mentorship to junior developers and internships providing them knowledge-sharing environments and participating in the code reviews sections.</li>
-                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices, by following the Google developers’ documents.</li>
-                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
-                            </ul> */}
-                            </Text>
+                            <Heading size='md'>Bachelor of Science in Computer Science</Heading>
+                            <Heading size='sm'>University of Computer Studies, Yangon</Heading>
+                            <Heading size='sm'>2006 - 2010</Heading>
                         </Box>
                     </Flex>
                 </Flex>
@@ -375,7 +343,7 @@ const Home = () => {
                                 <span>Email</span>
                             </div>
                             <div>
-                                <textarea placeholder='Message 📧' name="message" />
+                                <textarea placeholder='Message' name="message" />
                             </div>
                             <input type="submit" value="Send Message" />
                         </form>

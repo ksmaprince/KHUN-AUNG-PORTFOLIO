@@ -349,7 +349,6 @@ p::selection {
 }
 
 
-
 /* About me */
 #aboutMe {
     height: 100vh;
@@ -395,7 +394,6 @@ p::selection {
     text-align: justify;
     letter-spacing: 1.5px;
 }
-
 
 
 
@@ -541,52 +539,6 @@ p::selection {
     letter-spacing: 1.5px;
 }
 
-/* Education */
-#education {
-    height: 100vh;
-    background-color: #1a202c;
-    padding: 0px 20px;
-    overflow: hidden;
-}
-
-#education * {
-    transition: all 400ms ease-in-out;
-}
-
-/* Education heading */
-#education>h2:nth-child(1) {
-    text-align: center;
-    margin: 50px 0px -50px;
-    letter-spacing: 1px;
-}
-
-/* svg */
-#education>div:nth-child(2)>div:nth-child(1) {
-    width: 50%;
-}
-
-#education>div:nth-child(2)>div:nth-child(2) {
-    height: 100%;
-    width: 40%;
-    margin-inline: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-
-
-/* my image and desc part */
-#education>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
-    display: none;
-}
-
-#education>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
-    text-align: justify;
-    letter-spacing: 1.5px;
-}
-
 /* Projects section */
 #projects {
     margin-top: 50px;
@@ -702,6 +654,50 @@ p::selection {
     margin-left: 5px;
 }
 
+
+/* Education */
+#education {
+    height: 100vh;
+    background-color: #1a202c;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+#education * {
+    transition: all 400ms ease-in-out;
+}
+
+/* Experience heading */
+#education>h2:nth-child(1) {
+    text-align: center;
+    margin: 50px 0px -50px;
+    letter-spacing: 1px;
+}
+
+/* svg */
+#education>div:nth-child(2)>div:nth-child(1) {
+    width: 50%;
+}
+
+#education>div:nth-child(2)>div:nth-child(2) {
+    height: 100%;
+    width: 40%;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* my image and desc part */
+#education>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+    display: none;
+}
+
+#education>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
 
 
 /* Github stats */
@@ -954,6 +950,22 @@ p::selection {
     }
 
 
+    /* experience >
+     svg */
+
+     #experience>div:nth-child(2)>div:nth-child(1) {
+        display: none;
+    }
+
+    #experience>div:nth-child(2)>div:nth-child(2) {
+        width: 90%;
+    }
+
+    #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+        display: block;
+    }
+
+
     /* contect me */
     #contactMe>div:nth-child(2)>div:nth-child(1) {
         width: 600px;
@@ -1008,8 +1020,17 @@ p::selection {
         width: 90%;
     }
 
+    /* experience */
+    #experience>div:nth-child(2)>div:nth-child(1) {
+        display: none;
+    }
+
+    #experience>div:nth-child(2)>div:nth-child(2) {
+        width: 90%;
+    }
+
     /* Profile pic */
-    #aboutMe>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img {
+    #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img {
         height: 200px;
         width: 200px;
     }
@@ -1101,6 +1122,20 @@ p::selection {
     .skill p {
         font-size: 12px;
         white-space: nowrap;
+    }
+
+    /* experience */
+    #experience>h2:nth-child(1) {
+        margin: 50px 0px -50px;
+    }
+
+    #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+        display: none;
+    }
+
+    #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
+        text-align: justify;
+        letter-spacing: 1px;
     }
 
     .ProjectCard {
