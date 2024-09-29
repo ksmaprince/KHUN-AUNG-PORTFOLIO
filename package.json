@@ -1,8 +1,7 @@
 {
-  "homepage": "http://khunaung.me.s3-website-us-east-1.amazonaws.com/",
+  "homepage": "https://khunaung.me",
   "name": "my-app",
   "version": "0.1.0",
-  "proxy": "https://afej3vxkw2.execute-api.us-east-1.amazonaws.com/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.4.6",

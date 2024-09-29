@@ -342,6 +342,27 @@ export const projects = [
         github: "",
         liveDemo: "",
         category: 'work',
+    },{
+        id: 15,
+        title: "Movie-Vault",
+        type: "Entertainment App",
+        image: "https://ksmaprince.github.io/K.AUNG/Project/MovieVault.png",
+        description: "An android app using Jetpack Compose for intuitive design and good user experience. This app serves as entertainment with the user interface to register, log in, browse movie collections over 1000 titles, watch movie trailers, and save their favorites.",
+        techStack: ["Kotlin", "Android Studio","MVVM", "Coroutine", "Retrofit", "Dagger-Hilt", "Jetpack Libraries"],
+        github: "https://github.com/ksmaprince/MovieValut?tab=readme-ov-file",
+        liveDemo: "",
+        category: 'academic',
+    },{
+        id: 16,
+        title: "Movie-Vault-System",
+        type: "Backend API",
+        image: "https://ksmaprince.github.io/K.AUNG/Project/MovieVaultAPI.png",
+        description: "Backend Web Service to provide REST API for mobile development project by following the coding best practices and deploying on Azure as server-side to ensure 99.0% uptime on and global accessibility. ",
+        techStack: [ "Java", "Spring Boot", "Spring Data JPA", "JWT", "Hibernate", "MySQL"],
+        github: "https://github.com/ksmaprince/MovieValut-REST-WebService",
+        liveDemo: "",
+        category: 'academic',
     }
+
     
 ]
