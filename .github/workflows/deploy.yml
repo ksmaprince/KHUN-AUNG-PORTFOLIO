@@ -21,9 +21,6 @@ jobs:
       - name: Update Browserslist DB
         run: npx update-browserslist-db@latest
 
-      # - name: Build
-      #   run: CI=false npm run build
-
       - name: Install dependencies
         run: npm install
 
@@ -40,7 +37,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
 
       - name: Invalidate CloudFront cache (Optional)
-        if: ${{ secrets.DISTRIBUTION_ID != '' }}
+        if: ${{ secrets.DISTRIBUTION_ID }}
         run: |
           aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
         env:
