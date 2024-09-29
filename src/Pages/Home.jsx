@@ -125,9 +125,11 @@ const Home = () => {
                         <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank') }}>
                             {/* <a href={Resume} download="KHUN_AUNG_RESUME"> */}
-                            <a href='#'>
-                                <Button>Resume <GoCloudDownload /></Button>
-                            </a>
+                                <a href='#home'>
+                                <Button><span>Resume</span> <GoCloudDownload /></Button>
+                                </a>
+                            
+                            {/* <Button onClick={()=>{window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank')}}><span>Resume</span></Button> */}
                         </HStack>
                     </Box>
                     
