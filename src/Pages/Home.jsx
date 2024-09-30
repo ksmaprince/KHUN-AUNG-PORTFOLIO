@@ -16,8 +16,8 @@ import { SiGmail } from 'react-icons/si'
 import { projects, skills } from '../Utils/data';
 
 import ProjectCard from '../Components/Card';
-// import Typed from '../Components/Typed';
-// import Svg1 from '../Components/Svg1';
+import Typed from '../Components/Typed';
+import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
 import Slider from 'react-slick';
@@ -122,9 +122,11 @@ const Home = () => {
                         <Box className='content'>
                             <Heading fontSize="3.3em" className='text' data-text="Khun Aung"><span className='themeText'>Khun Aung</span></Heading>
                         </Box>
-                
-                        {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
-                        <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
+                       
+                        <Box>
+                            <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
+                        </Box>
+                         {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
                         <HStack className='hireMe' onClick={() => { window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank') }}>
                             {/* <a href={Resume} download="KHUN_AUNG_RESUME"> */}
                                 <a href='#home'>
@@ -151,32 +153,6 @@ const Home = () => {
                     </Box> 
                 </Flex>
             </Box>
-
-            {/* About me */}
-
-            {/* <Box id="aboutMe">
-                <Heading>About <span className='themeText'>me</span></Heading>
-                <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
-                    <div data-aos="fade-right">
-                        <Svg3 />
-                    </div>
-
-                    <Flex data-aos="fade-left">
-                        <Flex w="100%" gap="10%" justifyContent="center">
-                            <Image
-                                borderRadius='full'
-                                boxSize='250px'
-                                src='https://ksmaprince.github.io/K.AUNG/Avatar.png'
-                                alt='Khun Aung Avatar Image' />
-                            <Svg3 />
-                        </Flex>
-
-                        <Box>
-                            <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
-                        </Box>
-                    </Flex>
-                </Flex>
-            </Box> */}
 
             {/* Technical Skills section */}
             <Box id="skills">
@@ -244,19 +220,27 @@ const Home = () => {
                     
                     <Flex data-aos="fade-left">
                         <Box>
-                        <Heading size='md'>Mobile Android Software Engineer</Heading>
-                        <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading> 
-                        <br/>
-                            <Text>
-                            <ul>
-                                <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
-                                <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
-                                <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
-                                <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
-                                <li>Provided mentorship to junior developers and internships.</li>
-                                <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices.</li>
-                                <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
-                            </ul>
+                            <Heading size='md'>Mobile Android Software Engineer</Heading>
+                            <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading> 
+                            <br/>
+                            <Text id="BigJD">
+                                <ul>
+                                    <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
+                                    <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
+                                    <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
+                                    <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
+                                    <li>Provided mentorship to junior developers and internships.</li>
+                                    <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices.</li>
+                                    <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
+                                </ul>
+                            </Text>
+                            <Text id="SmallJD">
+                                <ul>
+                                    <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
+                                    <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
+                                    <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
+                                    <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
+                                </ul>
                             </Text>
                         </Box>
                     </Flex>

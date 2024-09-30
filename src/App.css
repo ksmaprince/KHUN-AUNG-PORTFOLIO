@@ -257,7 +257,7 @@ p::selection {
 
 #home>div:first-child>div {
     z-index: 1;
-    color: #b4b4b4
+    color: #fff
 }
 
 #home>div:first-child>div:nth-child(1) {
@@ -561,6 +561,16 @@ p::selection {
     text-align: justify;
     letter-spacing: 1.5px;
 }
+
+
+#BigJD > ul {
+    display: block;
+}
+
+#SmallJD > ul {
+    display: none;
+}
+
 
 /* Projects section */
 #projects {
@@ -945,8 +955,6 @@ p::selection {
 
 
 
-
-
 /*? ==========Breakpoints========== */
 
 /* 1024px width laptop */
@@ -998,8 +1006,12 @@ p::selection {
         width: 90%;
     }
 
-    #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
+    #BigJD > ul {
         display: block;
+    }
+    
+    #SmallJD > ul {
+        display: none;
     }
 
     /* experience >
@@ -1058,7 +1070,7 @@ p::selection {
     }
 
     .avatarBox{
-        width: 300px;
+        width: 200px;
         border-radius: 15px;
         text-align: center;
         letter-spacing: 0.5px;
@@ -1102,6 +1114,13 @@ p::selection {
         width: 200px;
     }
 
+    #BigJD > ul {
+        display: none;
+    }
+    
+    #SmallJD > ul {
+        display: block;
+    }
 
     /* projects */
     #projects>div:nth-child(2) {
@@ -1167,12 +1186,18 @@ p::selection {
         width: 100vw;
     }
 
+    #home>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)> p {
+        text-align: justify;
+        letter-spacing: 1px;
+        display: none;
+    }
+
     .content .text {
         font-size: 22px;
     }
 
     .avatarBox{
-        width: 300px;
+        width: 100px;
         border-radius: 15px;
         text-align: center;
         letter-spacing: 0.5px;
@@ -1229,6 +1254,14 @@ p::selection {
     #experience>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
         text-align: justify;
         letter-spacing: 1px;
+    }
+
+    #BigJD > ul {
+        display: none;
+    }
+
+    #SmallJD > ul {
+        display: block;
     }
 
     .ProjectCard {
