@@ -317,6 +317,29 @@ p::selection {
     letter-spacing: 2px;
 }
 
+.avatarBox{
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 22px;
+    
+    margin: 0px 25px 50px 25px;
+    transition: 0.5s;
+  }
+  .avatarBox:hover{
+    transform: scale(1.25);
+    box-shadow: 0 4px 10px 0 #431f47;
+  }
+
+.TypeEffect{
+    padding: 25px 0px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+  }
+
 
 /* Hire me button */
 .hireMe>a {
@@ -934,6 +957,20 @@ p::selection {
         font-size: 35px;
     }
 
+    .avatarBox{
+        width: 300px;
+        border-radius: 15px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0px 25px 50px 25px;
+        transition: 0.5s;
+      }
+      .avatarBox:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px 0 #431f47;
+      }
     /* about-me >
      svg */
 
@@ -1020,6 +1057,21 @@ p::selection {
         font-size: 25px;
     }
 
+    .avatarBox{
+        width: 300px;
+        border-radius: 15px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0px 25px 50px 25px;
+        transition: 0.5s;
+      }
+      .avatarBox:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px 0 #431f47;
+      }
+
     /* github stats */
     .github-stats img {
         width: 95% !important;
@@ -1104,23 +1156,35 @@ p::selection {
         width: 220px;
     }
 
-
-
     #home>div:first-child>div:nth-child(1) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 600vw;
     }
 
     #home>div:first-child>div:nth-child(2) {
-        width: 90vw;
+        width: 100vw;
     }
 
     .content .text {
         font-size: 22px;
     }
 
+    .avatarBox{
+        width: 300px;
+        border-radius: 15px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0px 25px 50px 25px;
+        transition: 0.5s;
+      }
+      .avatarBox:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px 0 #431f47;
+      }
 
     /* about me */
     #aboutMe>h2:nth-child(1) {

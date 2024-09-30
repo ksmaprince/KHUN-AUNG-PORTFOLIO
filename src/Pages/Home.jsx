@@ -16,6 +16,7 @@ import { SiGmail } from 'react-icons/si'
 import { projects, skills } from '../Utils/data';
 
 import ProjectCard from '../Components/Card';
+import Typed from '../Components/Typed';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
@@ -121,8 +122,9 @@ const Home = () => {
                         <Box className='content'>
                             <Heading fontSize="3.3em" className='text' data-text="Khun Aung"><span className='themeText'>Khun Aung</span></Heading>
                         </Box>
-                    
-                        <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text>
+                
+                        {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
+                        <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank') }}>
                             {/* <a href={Resume} download="KHUN_AUNG_RESUME"> */}
                                 <a href='#home'>
@@ -134,14 +136,25 @@ const Home = () => {
                     </Box>
                     
                      <Box data-aos="fade-down">
-                        <Svg1 />
+                        {/* <Svg1 /> */}
+                        <Flex w="100%" gap="10%" justifyContent="center">
+                            <Image
+                                className='avatarBox'
+                                borderRadius='full'
+                                boxSize='350px'
+                                src='https://ksmaprince.github.io/K.AUNG/Avatar.png'
+                                alt='Khun Aung Avatar Image' />
+                        </Flex>
+                        {/* <Box className='content'>
+                            <Typed />
+                        </Box> */}
                     </Box> 
                 </Flex>
             </Box>
 
             {/* About me */}
 
-            <Box id="aboutMe">
+            {/* <Box id="aboutMe">
                 <Heading>About <span className='themeText'>me</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
                     <div data-aos="fade-right">
@@ -153,7 +166,7 @@ const Home = () => {
                             <Image
                                 borderRadius='full'
                                 boxSize='250px'
-                                src='https://ksmaprince.github.io/K.AUNG/khun.png'
+                                src='https://ksmaprince.github.io/K.AUNG/Avatar.png'
                                 alt='Khun Aung Avatar Image' />
                             <Svg3 />
                         </Flex>
@@ -163,7 +176,7 @@ const Home = () => {
                         </Box>
                     </Flex>
                 </Flex>
-            </Box>
+            </Box> */}
 
             {/* Technical Skills section */}
             <Box id="skills">

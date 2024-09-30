@@ -23,9 +23,9 @@ const Navbar = () => {
                 <Box>
                     <Button><Link href="#"><span>Home</span></Link></Button>
                 </Box>
-                <Box>
+                {/* <Box>
                     <Button><Link href="#aboutMe"><span>About me</span></Link></Button>
-                </Box>
+                </Box> */}
                 <Box>
                     <Button><Link href="#skills"><span>Skills</span></Link></Button>
                 </Box>
@@ -75,7 +75,7 @@ const Navbar = () => {
 
                     <DrawerBody>
                         <Box><Link href='#' onClick={() => onClose()}>Home</Link></Box>
-                        <Box><Link href='#aboutMe' onClick={() => onClose()}>About me</Link></Box>
+                        {/* <Box><Link href='#aboutMe' onClick={() => onClose()}>About me</Link></Box> */}
                         <Box><Link href='#skills' onClick={() => onClose()}>Skills</Link></Box>
                         <Box><Link href='#experience' onClick={() => onClose()}>Experience</Link></Box>
                         <Box><Link href='#education' onClick={() => onClose()}>Education</Link></Box>
