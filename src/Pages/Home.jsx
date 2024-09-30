@@ -16,8 +16,8 @@ import { SiGmail } from 'react-icons/si'
 import { projects, skills } from '../Utils/data';
 
 import ProjectCard from '../Components/Card';
-import Typed from '../Components/Typed';
-import Svg1 from '../Components/Svg1';
+// import Typed from '../Components/Typed';
+// import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
 import Slider from 'react-slick';
