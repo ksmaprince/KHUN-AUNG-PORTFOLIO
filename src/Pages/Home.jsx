@@ -125,7 +125,7 @@ const Home = () => {
                             <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
                         </Box>
                          {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
-                        <HStack className='hireMe' onClick={() => { window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank') }}>
+                        <HStack className='hireMe' onClick={() => { window.open("/KHUN_AUNG_RESUME.pdf", '_blank') }}>
                             {/* <a href={Resume} download="KHUN_AUNG_RESUME"> */}
                                 <a href='#home'>
                                 <Button><span>Resume</span> <GoCloudDownload /></Button>
@@ -142,7 +142,7 @@ const Home = () => {
                                 className='avatarBox'
                                 borderRadius='full'
                                 boxSize='350px'
-                                src='https://ksmaprince.github.io/K.AUNG/Avatar.png'
+                                src="/Avatar.png"
                                 alt='Khun Aung Avatar Image' />
                         </Flex>
                         {/* <Box className='content'>

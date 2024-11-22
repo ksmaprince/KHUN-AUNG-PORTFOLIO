@@ -6,7 +6,7 @@ import { VscGithub } from "react-icons/vsc";
 const ProjectCard = ({ title, type, image, description, techStack, github, liveDemo }) => {
   return (
     <Flex flexDirection="column" className='ProjectCard'>
-      <Box className='cardImg' backgroundImage={image} />
+      <Box className='cardImg' backgroundImage= {require(`../Images/Project/`+image)} />
       <Box>
         <Flex>
           <Heading size="md">{title}</Heading>
