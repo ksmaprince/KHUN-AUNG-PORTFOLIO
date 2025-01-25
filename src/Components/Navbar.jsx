@@ -36,6 +36,9 @@ const Navbar = () => {
                     <Button><Link href="#education"><span>Education</span></Link></Button>
                 </Box>
                 <Box>
+                    <Button><Link href="#allProjects"><span>Projects</span></Link></Button>
+                </Box>
+                <Box>
                     {/* <Button onClick={()=>{window.open("https://ksmaprince.github.io/MY-PROFILE/static/media/KHUN_AUNG_RESUME.50dfc34fdb84aaf414aa.pdf", '_blank')}}><a href={Resume} download="KHUN_AUNG_RESUME"><span>Resume</span></a></Button> */}
                     {/* <Button onClick={()=>{window.open("https://ksmaprince.github.io/K.AUNG/KHUN_AUNG_RESUME.pdf", '_blank')}}><a href="#"><span>Resume</span></a></Button> */}
                     <Button onClick={()=>{window.open("/KHUN_AUNG_RESUME.pdf", '_blank')}}><span>Resume</span></Button>

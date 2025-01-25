@@ -122,7 +122,7 @@ const Home = () => {
                         </Box>
                        
                         <Box>
-                            <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 6 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/developer?id=K.H+Innovation'> <u className='themeText'>Google Play Store. </u></a> </Text>
+                            <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 7+ years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/dev?id=8816077677247791300'> <u className='themeText'>Google Play Store. </u></a> </Text>
                         </Box>
                          {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
                         <HStack className='hireMe' onClick={() => { window.open("/KHUN_AUNG_RESUME.pdf", '_blank') }}>
@@ -245,16 +245,6 @@ const Home = () => {
                 </Flex>
             </Box>
 
-            {/* show projects */}
-            <Box id="projects">
-                <Heading textAlign="center">Recent Work <span className='themeText'>Projects</span></Heading>
-                <Slider {...settings}>
-                    {
-                        projects.filter((el) => el.category === "work").map((project, i) => <ProjectCard key={i} {...project} />)
-                    }
-                </Slider>
-            </Box>
-
             <Box id="education">
                 <Heading>My <span className='themeText'>Education</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
@@ -280,6 +270,21 @@ const Home = () => {
                 </Flex>
             </Box>
 
+            <Box id='allProjects'>
+
+            </Box>
+
+            {/* show projects */}
+            <Box id="projects">
+                <Heading textAlign="center">Recent Work <span className='themeText'>Projects</span></Heading>
+                <Slider {...settings}>
+                    {
+                        projects.filter((el) => el.category === "work").map((project, i) => <ProjectCard key={i} {...project} />)
+                    }
+                </Slider>
+            </Box>
+
+
             <Box id="projects">
                 <Heading textAlign="center"><span className='themeText'>Academic </span>Projects</Heading>
                 <Slider {...settings}>
@@ -287,24 +292,6 @@ const Home = () => {
                         projects.filter((el) => el.category === "academic").map((project, i) => <ProjectCard key={i} {...project} />)
                     }
                 </Slider>
-            </Box>
-
-            {/* Github Statistics */}
-            <Box id="githubStats">
-                <Heading textAlign="center">Github <span className='themeText'>Stats</span></Heading>
-                <Center className='github-stats'>
-                    <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksmaprince&layout=compact&hide_border=true&theme=radical" alt="Atanu's most used languages" />
-                    <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ksmaprince&theme=radical" alt="Atanu's github Stats" />
-                </Center>
-
-                <Center className='github-stats'>
-                    <Image src="https://github-readme-stats.vercel.app/api?username=ksmaprince&show_icons=true&locale=en&layout=compact&hide_border=true&theme=radical" alt="Atanu's github stats" />
-                    <Image src="https://github-readme-streak-stats.herokuapp.com/?user=ksmaprince&layout=compact&hide_border=true&theme=radical" alt="Atanu's current Streaks" />
-                </Center>
-
-                <Center>
-                    <GitHubCalendar username="ksmaprince" color="#4a8af4" children={<ReactTooltip html />} />
-                </Center>
             </Box>
 
             <Box id="projects">
@@ -315,6 +302,27 @@ const Home = () => {
                     }
                 </Slider>
             </Box>
+            {/* Github Statistics */}
+            <Box id="githubStats">
+                <Heading textAlign="center">Github <span className='themeText'>Stats</span></Heading>
+                <Center className='github-stats'>
+                    <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksmaprince&layout=compact&hide_border=true&theme=radical" alt="Khun's most used languages" />
+                    <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ksmaprince&theme=radical" alt="Khun's github Stats" />
+                </Center>
+
+                <Center className='github-stats'>
+                    <Image src="https://github-readme-stats.vercel.app/api?username=ksmaprince&show_icons=true&locale=en&layout=compact&hide_border=true&theme=radical" alt="Khun's github stats" />
+                </Center>
+
+                <Center className='github-stats'>
+                    <Image src="https://github-profile-trophy.vercel.app/?username=ksmaprince&layout=compact&hide_border=true&theme=radical" alt="Khun's github vercels" />
+                </Center>
+
+                <Center>
+                    <GitHubCalendar username="ksmaprince" color="#4a8af4" children={<ReactTooltip html />} />
+                </Center>
+            </Box>
+
 
             {/* Contact me */}
             <Box id='contactMe'>
@@ -356,11 +364,11 @@ const Home = () => {
                             </HStack>
                         </Flex>
                         <Flex gap={["10px", "20px", "20px", "40px"]}>
-                            <Link href='https://wa.me/16412339391' target="_blank">
-                                <Tooltip label='WhatsApp'>
+                            <Link href='https://play.google.com/store/apps/dev?id=8816077677247791300' target="_blank">
+                                <Tooltip label='PlayStore'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" alt='Whatsapp brand logo'/>
+                                            <Image w="100%" src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/12/Google-play-icon-illustration-premium-vector-PNG.png" alt='Google Play logo'/>
                                         </Box>
                                     </Box>
                                 </Tooltip>
