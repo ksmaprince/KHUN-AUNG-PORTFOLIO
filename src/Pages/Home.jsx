@@ -220,7 +220,7 @@ const Home = () => {
                     <Flex data-aos="fade-left">
                         <Box>
                         <Heading size='md'>Senior Software Engineer, Android</Heading>
-                            <Heading size='sm'>HEY PLAY	01/2014 – Present </Heading> 
+                            <Heading size='sm'>HEY PLAY	01/2024 – Present </Heading> 
                             <br/>
                             <Text id="BigJD">
                                 <ul>
