@@ -122,7 +122,7 @@ const Home = () => {
                         </Box>
                        
                         <Box>
-                            <Text>Skilled Android Developer with a proven track record of success with around<b className='themeText'> 7+ years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/dev?id=8816077677247791300'> <u className='themeText'>Google Play Store. </u></a> </Text>
+                            <Text>Skilled Android Developer with a proven track record of success with <b className='themeText'> 8 years of experience </b> in designing, developing, maintaining, and deploying high-quality mobile apps for the financial industry. Proficient in both Java and Kotlin, with a portfolio including apps with <b className='themeText'>1,000,000+ (1 Million+) </b>downloads on the <a href='https://play.google.com/store/apps/dev?id=8816077677247791300'> <u className='themeText'>Google Play Store. </u></a> </Text>
                         </Box>
                          {/* <Text>Am a Software Developer, passionate and experienced in building Android applications.</Text> */}
                         <HStack className='hireMe' onClick={() => { window.open("/KHUN_AUNG_RESUME.pdf", '_blank') }}>
@@ -212,14 +212,35 @@ const Home = () => {
             <Box id="experience">
                 <Heading>My <span className='themeText'>Experiences</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
+                
                     <div data-aos="fade-right">
                             <Svg3/>
                     </div>
                     
                     <Flex data-aos="fade-left">
                         <Box>
+                        <Heading size='md'>Senior Software Engineer, Android</Heading>
+                            <Heading size='sm'>HEY PLAY	01/2014 – Present </Heading> 
+                            <br/>
+                            <Text id="BigJD">
+                                <ul>
+                                    <li>Developing a high-performance smart TV application optimized for engaging user experience on large screen.</li>
+                                    <li>Designing and implementing intuitive user interfaces using Jetpack Compose and Leanback libraries for Android TV.</li>
+                                    <li>Collaborating with cross-functional teams to ensure seamless integration of features and backend services.</li>
+                                    <li>Ensuring compatibility with various Android TV models and handling performance optimizations for smooth media streaming</li>
+                                </ul>
+                            </Text>
+                            <Text id="SmallJD">
+                                <ul>
+                                <li>Developing a high-performance smart TV application optimized for engaging user experience on large screen.</li>
+                                    <li>Designing and implementing intuitive user interfaces using Jetpack Compose and Leanback libraries for Android TV.</li>
+                                    <li>Collaborating with cross-functional teams to ensure seamless integration of features and backend services.</li>
+                                </ul>
+                            </Text>
+                            <br/>
+                            <br/>
                             <Heading size='md'>Mobile Android Software Engineer</Heading>
-                            <Heading size='sm'>KBZ BANK Ltd.	05/2017 – 02/2023 </Heading> 
+                            <Heading size='sm'>KBZ BANK	05/2017 – 02/2023 </Heading> 
                             <br/>
                             <Text id="BigJD">
                                 <ul>
@@ -227,9 +248,6 @@ const Home = () => {
                                     <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
                                     <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
                                     <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
-                                    <li>Provided mentorship to junior developers and internships.</li>
-                                    <li>Researched and implemented modern trend technologies to enhance the existing app, and ensure the coding standard and best practices.</li>
-                                    <li>Deployed mobile applications on the DC/DR App Server, Google Play Store, Samsung, Xiaomi, and Huawei.</li>
                                 </ul>
                             </Text>
                             <Text id="SmallJD">
@@ -237,7 +255,6 @@ const Home = () => {
                                     <li>Designed and implemented the apps for the organization using Java, Kotlin, MVP, MVVM, MVI, and Jetpack libraries.</li>
                                     <li>Work closely with UI/UX designers’ team to create visually appealing and user-friendly interfaces.</li>
                                     <li>Collaborated with cross-functional teams including PM, BA, QA, Backend, and UI/UX teams to gather requirements and define project scopes using Jira tool and scrum framework.</li>
-                                    <li>Performed the projects in testing, bug fixing, troubleshooting, and maintenance.</li>
                                 </ul>
                             </Text>
                         </Box>
@@ -286,7 +303,7 @@ const Home = () => {
 
 
             <Box id="projects">
-                <Heading textAlign="center"><span className='themeText'>Academic </span>Projects</Heading>
+                <Heading textAlign="center">Recent<span className='themeText'> Projects and Contributions</span></Heading>
                 <Slider {...settings}>
                     {
                         projects.filter((el) => el.category === "academic").map((project, i) => <ProjectCard key={i} {...project} />)
